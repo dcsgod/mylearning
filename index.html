@@ -3,144 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My AI/ML Paths</title>
+    <title>Ravi Kumar | AI & ML Learning Hub</title>
 
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: #fff;
-            text-align: center;
+            color: white;
+            min-height: 100vh;
         }
 
         header {
-            padding: 40px 20px;
+            padding: 60px 20px 40px;
+            text-align: center;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
 
-        p {
-            color: #cbd5f5;
+        header p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
         }
 
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
             margin: auto;
+            padding: 40px;
         }
 
         .card {
             background: #1e293b;
-            border-radius: 15px;
-            padding: 25px;
-            transition: 0.3s;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-radius: 18px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+            border: 1px solid rgba(255,255,255,0.05);
+            height: 100%;
         }
 
         .card:hover {
             transform: translateY(-10px);
             background: #334155;
+            box-shadow: 0 18px 35px rgba(0,0,0,0.45);
         }
 
-        a {
+        .card a {
             text-decoration: none;
             color: white;
-            display: block;
         }
 
         .title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 12px;
         }
 
         .desc {
-            font-size: 0.9rem;
-            color: #94a3b8;
+            color: #cbd5e1;
+            line-height: 1.6;
+            font-size: 0.95rem;
         }
 
         footer {
-            padding: 20px;
-            font-size: 0.8rem;
+            text-align: center;
+            padding: 30px;
             color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: rgba(59,130,246,0.15);
+            color: #93c5fd;
+            font-size: 0.8rem;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2.2rem;
+            }
+
+            .container{
+                padding:20px;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>🚀 My AI / ML Learning Hub</h1>
-    <p>Explore structured learning paths and projects</p>
+    <h1>🚀 AI / ML Learning Hub</h1>
+    <p>Structured Roadmaps, Theory, Implementations, Research & Projects</p>
 </header>
 
 <div class="container">
 
-    <a href="https://dcsgod.github.io/timeseriespath/" target="_blank">
-        <div class="card">
-            <div class="title">📈 Time Series Path</div>
-            <div class="desc">Learn forecasting, ARIMA, LSTM, and real-world time series modeling</div>
-        </div>
-    </a>
+    <div class="card">
+        <a href="https://dcsgod.github.io/mlpath/" target="_blank">
+            <div class="title">🤖 Machine Learning Path</div>
+            <div class="desc">
+                Master supervised learning, unsupervised learning, ensemble methods,
+                feature engineering, model evaluation, and production ML workflows.
+            </div>
+            <div class="badge">Foundation</div>
+        </a>
+    </div>
 
-    <a href="https://dcsgod.github.io/Gnnpath/" target="_blank">
-        <div class="card">
-            <div class="title">🧠 GNN Path</div>
-            <div class="desc">Dive into Graph Neural Networks, node embeddings, and graph learning</div>
-        </div>
-    </a>
-
-    <a href="https://dcsgod.github.io/mlpath/" target="_blank">
-        <div class="card">
-            <div class="title">🤖 ML Path</div>
-            <div class="desc">Core machine learning concepts, models, and practical implementations</div>
-        </div>
-    </a>
-
-    <a href="https://dcsgod.github.io/sdepth/" target="_blank">
-        <div class="card">
-            <div class="title">🖥️ SDE Path</div>
-            <div class="desc">Understanding depth prediction, computer vision & 3D perception</div>
-        </div>
-    </a>
-
-    <a href="https://dcsgod.github.io/Nlppath/" target="_blank">
-        
-        <div class="card">
+    <div class="card">
+        <a href="https://dcsgod.github.io/Nlppath/" target="_blank">
             <div class="title">💬 NLP Path</div>
-            <div class="desc">Text processing, transformers, LLMs, and language understanding</div>
-        </div>
-    </a>
-    <a href="https://dcsgod.github.io/cudapath/" target="_blank">
-        <div class="card">
-            <div class="title">🕶️ cuda Path</div>
-            <div class="desc">Text processing, transformers, LLMs, and language understanding</div>
-        </div>
-    </a>   
+            <div class="desc">
+                Learn tokenization, embeddings, transformers, attention mechanisms,
+                LLM architectures, fine-tuning, and retrieval systems.
+            </div>
+            <div class="badge">Language AI</div>
+        </a>
+    </div>
 
-  <a href="https://dcsgod.github.io/rlpath/" target="_blank">
-        <div class="card">
-            <div class="title">🏂 Reinforcement Path</div>
-            <div class="desc">Text processing, transformers, LLMs, and language understanding</div>
-        </div>
-    </a>
-      <a href="https://dcsgod.github.io/diffusionmodelspath/" target="_blank">
-        <div class="card">
+    <div class="card">
+        <a href="https://dcsgod.github.io/llmreasoning/" target="_blank">
+            <div class="title">🧩 Reasoning Models Path</div>
+            <div class="desc">
+                Explore Chain-of-Thought, Tree-of-Thoughts, ReAct,
+                test-time compute scaling, planning agents, reasoning benchmarks,
+                and modern reasoning LLMs.
+            </div>
+            <div class="badge">Advanced LLMs</div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://dcsgod.github.io/timeseriespath/" target="_blank">
+            <div class="title">📈 Time Series Path</div>
+            <div class="desc">
+                Learn forecasting techniques including ARIMA, Prophet,
+                XGBoost, TFT, LSTM, and production forecasting pipelines.
+            </div>
+            <div class="badge">Forecasting</div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://dcsgod.github.io/quantpath/" target="_blank">
+            <div class="title">📊 Quant Research Path</div>
+            <div class="desc">
+                Quantitative finance, alpha generation, factor investing,
+                portfolio optimization, statistical arbitrage,
+                and financial machine learning.
+            </div>
+            <div class="badge">Finance AI</div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://dcsgod.github.io/Gnnpath/" target="_blank">
+            <div class="title">🧠 Graph Neural Networks Path</div>
+            <div class="desc">
+                Understand graph structures, message passing,
+                node classification, graph embeddings,
+                graph transformers, and knowledge graphs.
+            </div>
+            <div class="badge">Graph Learning</div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://dcsgod.github.io/sdepth/" target="_blank">
+            <div class="title">🖥️ Computer Vision Path</div>
+            <div class="desc">
+                Explore image classification, object detection,
+                segmentation, depth estimation, 3D perception,
+                and multimodal vision systems.
+            </div>
+            <div class="badge">Vision AI</div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://dcsgod.github.io/cudapath/" target="_blank">
+            <div class="title">🕶️ CUDA Path</div>
+            <div class="desc">
+                GPU programming, CUDA kernels, memory optimization,
+                parallel computing, Tensor Core utilization,
+                and AI acceleration techniques.
+            </div>
+            <div class="badge">Performance</div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://dcsgod.github.io/rlpath/" target="_blank">
+            <div class="title">🏂 Reinforcement Learning Path</div>
+            <div class="desc">
+                Learn MDPs, Q-Learning, Deep Q Networks,
+                Policy Gradients, PPO, RLHF,
+                and autonomous decision-making systems.
+            </div>
+            <div class="badge">Decision AI</div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://dcsgod.github.io/diffusionmodelspath/" target="_blank">
             <div class="title">🎥 Diffusion Models Path</div>
-            <div class="desc">Text processing, transformers, LLMs, and language understanding</div>
-        </div>
-    </a>
+            <div class="desc">
+                Dive into Stable Diffusion, latent diffusion,
+                image generation, video generation,
+                ControlNet, and state-of-the-art generative AI.
+            </div>
+            <div class="badge">Generative AI</div>
+        </a>
+    </div>
 
 </div>
 
 <footer>
-    © 2026 Ravi Kumar | Built with ❤️
+    © 2026 Ravi Kumar | Built with ❤️ for the AI Community
 </footer>
 
 </body>
